@@ -1,0 +1,58 @@
+:root {
+  --yellow: #f1c40f;
+  --red: #c0392b;
+  --orange: #e67e22;
+}
+
+.title {
+  color: seagreen;
+  margin: 50px;
+}
+
+.egg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 200px;
+  height: 300px;
+  margin: 50px;
+  padding: 25px 0;
+  background-color: var(--red);
+  border-radius: 100px / 180px 180px 120px 120px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.stripe {
+  width: 100%;
+  height: 40px;
+  border-top: solid 5px var(--orange);
+  border-bottom: solid 5px var(--orange);
+  background-color: var(--yellow);
+}
+
+.stripe-dots {
+  background-image: radial-gradient(var(--orange) 2px, transparent 2px),
+    radial-gradient(var(--orange) 4px, transparent 4px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+.stripe-zz {
+  background-color: var(--orange);
+  background-image: linear-gradient(45deg, var(--yellow) 25%, transparent 0),
+    linear-gradient(135deg, var(--yellow) 25%, transparent 0),
+    linear-gradient(225deg, var(--yellow) 25%, transparent 0),
+    linear-gradient(315deg, var(--yellow) 25%, transparent 0);
+  background-size: 40px, 40px;
+  background-position: 0 0, 20px 0, 20px 0, 0 0;
+}
+
+.stripe-hart {
+  background-image: linear-gradient(135deg, var(--orange) 15%, transparent 0),
+    linear-gradient(225deg, var(--orange) 15%, transparent 0),
+    radial-gradient(var(--orange) 30%, transparent 0),
+    radial-gradient(var(--orange) 30%, transparent 0);
+  background-size: 40px, 40px;
+  background-position: 25px 22px, 25px 22px, 0 -3px, 10px -3px;
+}
